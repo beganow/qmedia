@@ -26,13 +26,13 @@ server.post('/api/form', (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'Pashok12.obodov@gmail.com',
-            pass: 'sdtbwxftlelzqtel',
+            user: 'adamqmedia68@gmail.com',
+            pass: 'pwchkrwdnjbssdfu',
         },
     });
 
     const mailOptions = {
-        from: 'Pashok12.obodov@gmail.com',
+        from: 'adamqmedia68@gmail.com',
         to: email,
         subject: 'Подтверждение регистрации на семинар',
         text: `Здравствуйте, ${name}!\n\nВы успешно зарегистрированы на семинар:${seminar}.\n\nС уважением,\nКоманда семинара`,
