@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
             seminar: seminar
         };
 
-        fetch('https://qmedia-five.vercel.app', {
+        fetch('http://localhost:3000/submit', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
