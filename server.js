@@ -3,9 +3,7 @@ const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const path = require('path');
 const cors = require('cors');
-server.use(cors({
-    origin: '*', // или укажите конкретный домен
-}));
+
 
 const server = express();
 const PORT = process.env.PORT || 3000;
