@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 server.use(cors());
 server.use(bodyParser.json());
 server.use('/',express.static(path.join(__dirname, 'public')));
-
+server.use(bodyParser.json());
 
 server.post('/submit', (req, res) => {
     const { name, email, seminar } = req.body;
