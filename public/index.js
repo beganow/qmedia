@@ -62,7 +62,7 @@
                 seminar: seminar
             };
 
-            fetch('qmedia-five.vercel.app/', {
+            fetch('https://qmedia-five.vercel.app/api/form', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
