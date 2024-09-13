@@ -16,7 +16,7 @@ server.use(cors({
     origin: '*',
 }));
 
-server.post('/submit', (req, res) => {
+server.post('/api', (req, res) => {
     const { name, email, seminar } = req.body;
 
     if (email === 'Pashok12.obodov@gmail.com') {
