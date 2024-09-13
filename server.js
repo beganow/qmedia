@@ -13,7 +13,7 @@ server.use(bodyParser.json());
 server.use('/',express.static(path.join(__dirname, 'public')));
 
 
-server.post('https://qmedia-test-olive.vercel.app/send-email', (req, res) => {
+server.post('https://qmedia-five.vercel.app/send-email', (req, res) => {
     const { name, email, seminar } = req.body;
 
     if (email === 'Pashok12.obodov@gmail.com') {

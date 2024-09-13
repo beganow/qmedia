@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
             seminar: seminar
         };
 
-        fetch('https://qmedia-test-olive.vercel.app/send-email', {
+        fetch('https://qmedia-five.vercel.app/send-email', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
