@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Тестовое задание junior web-разработчик</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="">
+</head>
+<body class="bg-primary p-4 border-5">
+<div class="container mt-3">
+    <form id="seminarForm" class="bg-white p-4 border rounded-4">
+        <h1 class="header mb-3 mt-2 me-4 fw-bold">Отправить заявку на участие в семинаре</h1>
+        <div class="header_text mb-0">
+            <p class="header_subtext mb-0">Организаторы свяжутся с вами для подтверждения записи.</p>
+            <p class="header_subtext mb-4">Участие в семинаре <a href="#">бесплатное</a>.</p>
+        </div>
+        <div class="mb-3">
+            <label for="name" class="form-label">Ваше имя:</label>
+            <input class="form-control" id="name" type="text" placeholder="Иванов Алексей">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Контактный email:</label>
+            <input class="form-control" id="email" type="email" placeholder="example@mail.com">
+        </div>
+        <div class="mb-4">
+            <label for="seminar" class="form-label">Интересующий семинар:</label>
+            <select class="form-select fw-bold"  id="seminar" name="seminar">
+                <option value="" disabled selected>Выбрать</option>
+                <option value="Семинар 1">Семинар 1</option>
+                <option value="Семинар 2">Семинар 2</option>
+                <option value="Семинар 3">Семинар 3</option>
+                <option value="Семинар 4">Семинар 4</option>
+                <option value="Семинар 5">Семинар 5</option>
+            </select>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-7 text-muted">
+                <p class="footer_text mt-4 mb-0 fw-bold">Все поля обязательны для заполнения.</p>
+                <p class="footer_text fw-bold">Отправляя заявку, вы соглашаетесь с договором публичной оферты и политикой обработки данных.</p>
+            </div>
+            <div class="col-md-5 text-end">
+                <button type="submit" class="btn custom-btn mt-2">Отправить</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 600px;
+
+}
+.header {
+    font-size: 32px;
+}
+
+.header_text, .header_subtext, .footer_text, .butt_opt {
+}
+
+.footer_text {
+    font-size: 10px;
+    color: grey;
+}
+
+.butt_opt {
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+a{
+    color: black;
+}
+a:hover {
+    color: #0d6efd;
+}
+
+.custom-btn {
+    background-color: white;
+    color: black;
+    border: 4px solid #ced4da;
+    font-weight: normal;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 7px;
+    width: 150px;
+    -webkit-transition: background-color 0.3s ease, transform 0.2s ease;
+    -moz-transition: background-color 0.3s ease, transform 0.2s ease;
+    -ms-transition: background-color 0.3s ease, transform 0.2s ease;
+    -o-transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-btn:hover {
+    background-color: #0d6efd;
+    color: white;
+    font-weight: bold;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05); /* For Chrome, Safari, and Opera */
+    -moz-transform: scale(1.05); /* For Firefox */
+    -ms-transform: scale(1.05); /* For IE and Edge */
+    -o-transform: scale(1.05); /* For older Opera */
+}
+.custom-btn:disabled {
+    background-color: #e0e0e0;
+    color: #a0a0a0;
+    border-color: #d0d0d0;
+    cursor: not-allowed;
+    transform: none;
+}
+.footer_text:hover{
+    color: #0d6efd;
+}
+
+.error-placeholder::placeholder {
+    color: red;
+}
