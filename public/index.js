@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
             seminar: seminar
         };
 
-        fetch('https://qmedia-five.vercel.app', {
+        fetch('https://qmedia-five.vercel.app/submit', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
