@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
             seminar: seminar
         };
 
-        fetch('http://localhost:3000/send-email', {
+        fetch('https://qmedia-test-olive.vercel.app/send-email', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
