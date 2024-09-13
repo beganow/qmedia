@@ -69,12 +69,6 @@
                 },
                 body: JSON.stringify(formData)
             })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
                 .then(data => {
                     if (data.success) {
                         alert('Ваша заявка успешно отправлена и находится в обработке. Ожидайте email с подтверждением бронирования.');
