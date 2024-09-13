@@ -69,6 +69,7 @@
                 },
                 body: JSON.stringify(formData)
             })
+                .then(response => response.json())
                 .then(data => {
                     if (data.success) {
                         alert('Ваша заявка успешно отправлена и находится в обработке. Ожидайте email с подтверждением бронирования.');
