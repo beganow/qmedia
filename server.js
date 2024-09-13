@@ -1,9 +1,11 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
-const cors = require('cors');
 const path = require('path');
-
+const cors = require('cors');
+server.use(cors({
+    origin: '*', // или укажите конкретный домен
+}));
 
 const server = express();
 const PORT = process.env.PORT || 3000;
@@ -12,6 +14,9 @@ server.use(cors());
 server.use(bodyParser.json());
 server.use('/',express.static(path.join(__dirname, 'public')));
 server.use(bodyParser.json());
+server.use(cors({
+    origin: '*',
+}));
 
 server.post('/submit', (req, res) => {
     const { name, email, seminar } = req.body;
