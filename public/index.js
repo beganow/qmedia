@@ -14,15 +14,15 @@
 
             let hasError = false;
             const russianOnlyPattern = /^[А-Яа-яЁё]+$/;
-            const invalidCharactersPattern = /[ \.]/;
+            const invalidCharactersPattern = /[^\wА-Яа-яЁё]/;
             if (name === "") {
                 setError(nameInput, 'Пожалуйста, введите ваше имя.');
                 hasError = true;
-            } else if (name.length < 2 || name.length > 15) {
+            } else if (name.length < 2 || name.length > 50) {
                 setError(nameInput, 'Пожалуйста, введите настоящее имя.');
                 hasError = true;
             } else if (invalidCharactersPattern.test(name)) {
-                setError(nameInput, 'Имя не должно содержать пробелы или точки.');
+                setError(nameInput, 'Имя не должно содержать специальные символы.');
                 hasError = true;
             } else if (!russianOnlyPattern.test(name)) {
                 setError(nameInput, 'Имя должно содержать только русские символы.');
